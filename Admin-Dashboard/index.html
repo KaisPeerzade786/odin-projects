@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Material Design Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- ================= SIDEBAR ================= -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <span class="mdi mdi-view-dashboard"></span>
+                <span>Dashboard</span>
+            </div>
+
+            <nav class="main-nav">
+                <a href="#">
+                    <span class="mdi mdi-home"></span>
+                    <span>Home</span>
+                </a>
+
+                <a href="#">
+                    <span class="mdi mdi-card-account-details-outline"></span>
+                    <span>Profile</span>
+                </a>
+
+                <a href="#">
+                    <span class="mdi mdi-message"></span>
+                    <span>Messages</span>
+                </a>
+
+                <a href="#">
+                    <span class="mdi mdi-clock"></span>
+                    <span>History</span>
+                </a>
+
+                <a href="#">
+                    <span class="mdi mdi-file-document"></span>
+                    <span>Tasks</span>
+                </a>
+
+                <a href="#">
+                    <span class="mdi mdi-account-group"></span>
+                    <span>Communities</span>
+                </a>
+            </nav>
+
+            <nav class="secondary-nav">
+                <a href="#">
+                    <span class="mdi mdi-cog"></span>
+                    <span>Settings</span>
+                </a>
+
+                <a href="#">
+                    <span class="mdi mdi-help-box"></span>
+                    <span>Support</span>
+                </a>
+
+                <a href="#">
+                    <span class="mdi mdi-shield-check"></span>
+                    <span>Privacy</span>
+                </a>
+            </nav>
+
+        </aside>
+
+
+        <!-- ================= MAIN AREA ================= -->
+        <div class="main">
+
+            <!-- ================= HEADER ================= -->
+            <header class="header">
+
+                <div class="search-area">
+                    <span class="mdi mdi-magnify"></span>
+                    <input type="text">
+                </div>
+
+                <div class="user-small">
+                    <span class="mdi mdi-bell-outline"></span>
+                    <img src="./NEWPP.jpeg" alt="Profile picture">
+                    <strong>Kais Peerzade</strong>
+                </div>
+
+                <div class="user-large">
+
+                    <img
+                        src="./NEWPP.jpeg"
+                        alt="Profile picture"
+                    >
+
+                    <div class="greeting">
+                        <p>Hi there,</p>
+                        <h1>Kais Peerzade (@kais)</h1>
+                    </div>
+
+                </div>
+
+                <div class="header-buttons">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
+
+            </header>
+
+
+            <!-- ================= CONTENT ================= -->
+            <main class="content">
+
+                <!-- PROJECTS -->
+                <section class="projects">
+
+                    <h2>Your Projects</h2>
+
+                    <div class="project-grid">
+
+                        <article class="card project-card">
+                            <div>
+                                <h3>Super Cool Project</h3>
+                                <p>
+                                    Sed tempus ut lacus ut scelerisque.
+                                    Suspendisse sollicitudin nibh erat, id
+                                    facilisis felis accumsan nec.
+                                </p>
+                            </div>
+
+                            <div class="card-icons">
+                                <span class="mdi mdi-star-plus-outline"></span>
+                                <span class="mdi mdi-eye-plus-outline"></span>
+                                <span class="mdi mdi-source-fork"></span>
+                            </div>
+                        </article>
+
+
+                        <article class="card project-card">
+                            <div>
+                                <h3>Less Cool Project</h3>
+                                <p>
+                                    Nullam condimentum tellus lacus, in
+                                    accumsan elit maximus ac. Donec hendrerit
+                                    sodales congue.
+                                </p>
+                            </div>
+
+                            <div class="card-icons">
+                                <span class="mdi mdi-star-plus-outline"></span>
+                                <span class="mdi mdi-eye-plus-outline"></span>
+                                <span class="mdi mdi-source-fork"></span>
+                            </div>
+                        </article>
+
+
+                        <article class="card project-card">
+                            <div>
+                                <h3>Impossible App</h3>
+                                <p>
+                                    In hac habitasse platea dictumst.
+                                    Vivamus dictum rutrum arcu, a placerat
+                                    velit sagittis id.
+                                </p>
+                            </div>
+
+                            <div class="card-icons">
+                                <span class="mdi mdi-star-plus-outline"></span>
+                                <span class="mdi mdi-eye-plus-outline"></span>
+                                <span class="mdi mdi-source-fork"></span>
+                            </div>
+                        </article>
+
+
+                        <article class="card project-card">
+                            <div>
+                                <h3>Easy Peasy App</h3>
+                                <p>
+                                    Etiam cursus eros ac efficitur fringilla.
+                                    Vestibulum dignissim urna eget accumsan
+                                    aliquam.
+                                </p>
+                            </div>
+
+                            <div class="card-icons">
+                                <span class="mdi mdi-star-plus-outline"></span>
+                                <span class="mdi mdi-eye-plus-outline"></span>
+                                <span class="mdi mdi-source-fork"></span>
+                            </div>
+                        </article>
+
+
+                        <article class="card project-card">
+                            <div>
+                                <h3>Ad Blocker</h3>
+                                <p>
+                                    Quisque eget rutrum nisl. Nam augue justo,
+                                    cursus vitae metus vel, pharetra hendrerit
+                                    felis.
+                                </p>
+                            </div>
+
+                            <div class="card-icons">
+                                <span class="mdi mdi-star-plus-outline"></span>
+                                <span class="mdi mdi-eye-plus-outline"></span>
+                                <span class="mdi mdi-source-fork"></span>
+                            </div>
+                        </article>
+
+
+                        <article class="card project-card">
+                            <div>
+                                <h3>Money Maker</h3>
+                                <p>
+                                    Praesent convallis, libero quis congue
+                                    elementum, nunc ante faucibus sapien,
+                                    ac scelerisque tortor purus sit amet ex.
+                                </p>
+                            </div>
+
+                            <div class="card-icons">
+                                <span class="mdi mdi-star-plus-outline"></span>
+                                <span class="mdi mdi-eye-plus-outline"></span>
+                                <span class="mdi mdi-source-fork"></span>
+                            </div>
+                        </article>
+
+                    </div>
+
+                </section>
+
+
+                <!-- RIGHT COLUMN -->
+                <aside class="right-column">
+
+                    <!-- ANNOUNCEMENTS -->
+                    <section class="announcements">
+
+                        <h2>Announcements</h2>
+
+                        <div class="card announcement-card">
+
+                            <div class="announcement">
+                                <h3>Site Maintenance</h3>
+                                <p>
+                                    Vestibulum condimentum tellus lacus,
+                                    in accumsan elit maximus ac. Donec
+                                    hendrerit sodales congue...
+                                </p>
+                            </div>
+
+                            <div class="announcement">
+                                <h3>Community Share Day</h3>
+                                <p>
+                                    Nam vel lectus tincidunt, rutrum nulla
+                                    eu, ornare libero. Aliquam dictum
+                                    accumsan porttitor...
+                                </p>
+                            </div>
+
+                            <div class="announcement">
+                                <h3>Updated Privacy Policy</h3>
+                                <p>
+                                    Phasellus efficitur elit eget
+                                    consectetur, eget condimentum ante
+                                    auctor.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- TRENDING -->
+                    <section class="trending">
+
+                        <h2>Trending</h2>
+
+                        <div class="card trending-card">
+
+                            <div class="trend-user">
+                                <img src="https://i.pravatar.cc/70?img=12" alt="">
+                                <div>
+                                    <strong>@numan</strong>
+                                    <p>World Peace Builder</p>
+                                </div>
+                            </div>
+
+                            <div class="trend-user">
+                                <img src="./NEWPP.jpeg" alt="">
+                                <div>
+                                    <strong>@kais</strong>
+                                    <p>Super Cool Project</p>
+                                </div>
+                            </div>
+
+                            <div class="trend-user">
+                                <img src="https://i.pravatar.cc/70?img=13" alt="">
+                                <div>
+                                    <strong>@saud</strong>
+                                    <p>Life Changing App</p>
+                                </div>
+                            </div>
+
+                            <div class="trend-user">
+                                <img src="https://i.pravatar.cc/70?img=32" alt="">
+                                <div>
+                                    <strong>@ABC</strong>
+                                    <p>No Traffic Maker</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </aside>
+
+            </main>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
