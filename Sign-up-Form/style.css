@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.page {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* =========================
+   LEFT SIDEBAR
+========================= */
+
+.sidebar {
+    width: 37%;
+    min-height: 100vh;
+
+    background-image: url("imgs/halie-west-25xggax4bSA-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Logo */
+
+.logo-container {
+    margin-top: 190px;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+.logo-container img {
+    width: 80px;
+    height: auto;
+}
+
+.logo-container h1 {
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-size: 70px;
+    margin: 0 0 0 15px;
+}
+
+/* Photo credit */
+
+.photo-credit {
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.photo-credit a {
+    color: white;
+}
+
+
+/* =========================
+   RIGHT CONTENT
+========================= */
+
+.content {
+    width: 63%;
+    background-color: #f5f5f5;
+}
+
+/* Intro */
+
+.intro {
+    padding: 125px 40px 40px;
+    max-width: 700px;
+}
+
+.intro h2 {
+    font-size: 24px;
+    line-height: 1.4;
+    margin: 0 0 20px;
+}
+
+.intro p {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 600;
+    margin: 0 0 20px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+form {
+    background-color: white;
+    padding: 30px 40px 35px;
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    margin: 0 0 30px;
+    font-size: 24px;
+}
+
+.form-row {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+label {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+
+    font-size: 16px;
+    outline: none;
+}
+
+/* Blue border when selected */
+
+input:focus {
+    border: 1px solid #2563eb;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
+}
+
+/* Red border when invalid */
+
+input:user-invalid {
+    border: 1px solid red;
+}
+
+
+/* =========================
+   BOTTOM SECTION
+========================= */
+
+.bottom-section {
+    padding: 30px 40px;
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    padding: 15px 35px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #46583a;
+}
+
+.bottom-section p {
+    font-size: 16px;
+}
+
+.bottom-section a {
+    color: #596D48;
+    font-weight: bold;
+    text-decoration: none;
+}
