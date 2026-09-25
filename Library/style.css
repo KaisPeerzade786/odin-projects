@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+header {
+    background-color: #1e293b;
+    color: white;
+
+    padding: 20px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+
+    padding: 10px 18px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#new-book-btn {
+    background-color: white;
+    color: #1e293b;
+    font-weight: bold;
+}
+
+#new-book-btn:hover {
+    background-color: #e2e8f0;
+}
+
+main {
+    padding: 40px;
+}
+
+#library-container {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+    gap: 25px;
+}
+
+.book-card {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.book-card h2 {
+    font-size: 24px;
+}
+
+.book-card p {
+    font-size: 16px;
+}
+
+.read-status {
+    font-weight: bold;
+}
+
+.read {
+    color: green;
+}
+
+.not-read {
+    color: crimson;
+}
+
+.book-card button {
+    margin-top: 5px;
+}
+
+.toggle-read {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.remove-book {
+    background-color: #ef4444;
+    color: white;
+}
+
+.toggle-read:hover {
+    background-color: #2563eb;
+}
+
+.remove-book:hover {
+    background-color: #dc2626;
+}
+
+/* Dialog */
+
+dialog {
+    border: none;
+
+    border-radius: 12px;
+
+    padding: 30px;
+
+    width: 350px;
+
+    margin: auto;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#book-form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+#book-form h2 {
+    margin-bottom: 10px;
+}
+
+#book-form input[type="text"],
+#book-form input[type="number"] {
+    padding: 10px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+}
+
+.checkbox-container {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin: 10px 0;
+}
+
+.form-buttons {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 10px;
+}
+
+.form-buttons button[type="submit"] {
+    background-color: #16a34a;
+    color: white;
+}
+
+#cancel-btn {
+    background-color: #64748b;
+    color: white;
+}
